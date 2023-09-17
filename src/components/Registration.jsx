@@ -64,10 +64,10 @@ const Registration = () => {
                             <span>Retype Password</span>
                         </div>
                         <div className="my-4 px-4">
-                            <NavLink className="btn cartbtn proceedbtn mb-2" to="/login1">Register</NavLink>
+                            <NavLink className="btn cartbtn proceedbtn mb-2" to="/T-Shirt-Store/login1">Register</NavLink>
                         </div>
                         <div className="loginFormBottom">
-                            <p>Do you have any account? <NavLink className="" to="/login">Login</NavLink></p>
+                            <p>Do you have any account? <NavLink className="" to="/T-Shirt-Store/login">Login</NavLink></p>
                         </div>
                     </div>
                 </div>

@@ -36,7 +36,7 @@ function Card  (props)  {
             <div className={` ${screenWidth > 768 ? "col-3" : "col-6" }`}>
                 <div className="cardcontainer mt-4">
                     <div className="cardstyle ">
-                        <Link to= {`/Product/${props.productName} `}
+                        <Link to= {`/T-Shirt-Store/Product/${props.productName} `}
 
                             onMouseOver={() => setOver(true)}
                             onMouseOut={() => setOver(false)}   >

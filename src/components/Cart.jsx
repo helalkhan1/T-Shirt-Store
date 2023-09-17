@@ -14,7 +14,7 @@ const Cart = () =>{
                 <div className="center">
                     <h1>You have no item in cart.</h1>
                     <h3>Click Here to Shopping</h3>
-                    <NavLink className="btn cartbtn" to="/buy">Start Shopping</NavLink>
+                    <NavLink className="btn cartbtn" to="/T-Shirt-Store/buy">Start Shopping</NavLink>
                 </div>
             </>  
         )
@@ -67,7 +67,7 @@ const Cart = () =>{
 
                                 <div className="row mt-2 mb-3">
                                     <div className="col-6">
-                                        <NavLink className="btn cartbtn" to="/buy">Continue Shopping</NavLink>
+                                        <NavLink className="btn cartbtn" to="/T-Shirt-Store/buy">Continue Shopping</NavLink>
                                     </div>
                                     <div className="col-6">
                                         <button className="btn rightFloat clearbtn" onClick={()=> clearCart()}>Clear Cart</button>
@@ -94,7 +94,7 @@ const Cart = () =>{
                                         <hr/>
                                         <p>Have Copon?</p>
                                         
-                                        <NavLink className="btn cartbtn proceedbtn" to="/checkout">Proceed to checkout</NavLink>
+                                        <NavLink className="btn cartbtn proceedbtn" to="/T-Shirt-Store/checkout">Proceed to checkout</NavLink>
                                        
                                     </div>
                                 </div>

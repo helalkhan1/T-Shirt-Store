@@ -18,7 +18,7 @@ const Modal = ({closeModal, cart, total_price, incrementCartCount, decrementCart
                     <div className="center mt-5">
                         <h1>You have no item in cart.</h1>
                         <h3>Click Here to Shopping</h3>
-                        <NavLink className="btn cartbtn" to="/buy" onClick={closeModal} >Start Shopping</NavLink>
+                        <NavLink className="btn cartbtn" to="/T-Shirt-Store/buy" onClick={closeModal} >Start Shopping</NavLink>
                     </div>
                 </div>
             </>  
@@ -52,8 +52,8 @@ const Modal = ({closeModal, cart, total_price, incrementCartCount, decrementCart
                     </div>
                     <hr className="modalhr"/>
                     <div className="modelHeading">
-                        <NavLink className="btn cartbtn proceedbtn mb-3" to="/cart" onClick={closeModal}>View Cart</NavLink><br/>
-                        <NavLink className="btn cartbtn proceedbtn mb-3" to="/checkout" onClick={closeModal} >Checkout</NavLink>
+                        <NavLink className="btn cartbtn proceedbtn mb-3" to="/T-Shirt-Store/cart" onClick={closeModal}>View Cart</NavLink><br/>
+                        <NavLink className="btn cartbtn proceedbtn mb-3" to="/T-Shirt-Store/checkout" onClick={closeModal} >Checkout</NavLink>
                     </div>
                 </div>
             </div>

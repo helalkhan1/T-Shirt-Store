@@ -31,18 +31,18 @@ const Navbar = () => {
                 }
                 { modal && <Modal closeModal={closeModal}  cart={cart} total_price={total_price} incrementCartCount={incrementCartCount} decrementCartCount={decrementCartCount} removeItem={removeItem} /> }
               </div>
-              <div className="col">  <NavLink className="nav-link" to="/login">Login</NavLink></div>
+              <div className="col">  <NavLink className="nav-link" to="/T-Shirt-Store/login">Login</NavLink></div>
             </div>
           </div>
           
           <div className="collapse navbar-collapse mx-4 " id="mynavbar">
             <ul className="navbar-nav me-auto">
-              <li className="nav-item"> <NavLink className="nav-link " to="/">HOME</NavLink> </li>
-              <li className="nav-item"> <NavLink className="nav-link" to="/buy">BUY T-SHIRTS</NavLink> </li>
-              <li className="nav-item"> <NavLink className="nav-link" to="/women">WOMEN</NavLink> </li>
-              <li className="nav-item"> <NavLink className="nav-link" to="/men">MEN</NavLink> </li>
-              <li className="nav-item"> <NavLink className="nav-link" to="/about">ABOUT</NavLink> </li>
-              <li className="nav-item"> <NavLink className="nav-link" to="/contact">CONTACT</NavLink> </li>
+              <li className="nav-item"> <NavLink className="nav-link " to="/T-Shirt-Store/">HOME</NavLink> </li>
+              <li className="nav-item"> <NavLink className="nav-link" to="/T-Shirt-Store/buy">BUY T-SHIRTS</NavLink> </li>
+              <li className="nav-item"> <NavLink className="nav-link" to="/T-Shirt-Store/women">WOMEN</NavLink> </li>
+              <li className="nav-item"> <NavLink className="nav-link" to="/T-Shirt-Store/men">MEN</NavLink> </li>
+              <li className="nav-item"> <NavLink className="nav-link" to="/T-Shirt-Store/about">ABOUT</NavLink> </li>
+              <li className="nav-item"> <NavLink className="nav-link" to="/T-Shirt-Store/contact">CONTACT</NavLink> </li>
             </ul>
 
             <div className="d-none d-md-block">
@@ -58,7 +58,7 @@ const Navbar = () => {
                   }
                   { modal && <Modal closeModal={closeModal}  cart={cart} total_price={total_price} incrementCartCount={incrementCartCount} decrementCartCount={decrementCartCount} removeItem={removeItem} /> }
                 </div>
-                <div className="col"> <NavLink className="nav-link" to="/login">Login</NavLink> </div>
+                <div className="col"> <NavLink className="nav-link" to="/T-Shirt-Store/login">Login</NavLink> </div>
               </div>
             </div>
           </div>

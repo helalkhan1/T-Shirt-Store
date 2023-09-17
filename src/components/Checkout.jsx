@@ -38,7 +38,7 @@ const Checkout = () =>{
                 <div className="center">
                     <h1>You have no item in cart.</h1>
                     <h3>Click Here to Shopping</h3>
-                    <NavLink className="btn cartbtn" to="/buy">Start Shopping</NavLink>
+                    <NavLink className="btn cartbtn" to="/T-Shirt-Store/buy">Start Shopping</NavLink>
                 </div>
             </>  
         );

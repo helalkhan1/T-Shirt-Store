@@ -21,17 +21,17 @@ function App() {
       <Navbar/>
       
       <Routes> 
-        <Route path="/" Component={Home}/>
-        <Route path="/buy" Component={Buy}/>
-        <Route path="/product/:pName" Component={Product}/>
-        <Route path="/women" Component={Women}/>
-        <Route path="/men" Component={Men}/>
-        <Route path="/about" Component={About}/>
-        <Route path="/contact" Component={Contact}/>
-        <Route path="/cart" Component={Cart}/>
-        <Route path="/checkout" Component={Checkout}/>
-        <Route path="/login" Component={Login} />
-        <Route path="/registration" Component={Registration} />
+        <Route path="/T-Shirt-Store/" Component={Home}/>
+        <Route path="/T-Shirt-Store/buy" Component={Buy}/>
+        <Route path="/T-Shirt-Store/product/:pName" Component={Product}/>
+        <Route path="/T-Shirt-Store/women" Component={Women}/>
+        <Route path="/T-Shirt-Store/men" Component={Men}/>
+        <Route path="/T-Shirt-Store/about" Component={About}/>
+        <Route path="/T-Shirt-Store/contact" Component={Contact}/>
+        <Route path="/T-Shirt-Store/cart" Component={Cart}/>
+        <Route path="/T-Shirt-Store/checkout" Component={Checkout}/>
+        <Route path="/T-Shirt-Store/login" Component={Login} />
+        <Route path="/T-Shirt-Store/registration" Component={Registration} />
       </Routes>
      
       <Footer/>

@@ -19,7 +19,7 @@ const Home = () => {
                                 <p> Welcome to t-shirt store.</p>
                                 <h2>Modern. Fasionable.<br/>Aweasome.</h2>
                                 <p>are available here.</p>
-                                <NavLink className="btn homebtn" to="/buy">Shop Now</NavLink>
+                                <NavLink className="btn homebtn" to="/T-Shirt-Store/buy">Shop Now</NavLink>
                             </div>
                             <div className="col-md-6 order-2 order-md-1 homeimg center">
                                 <img src={homeImage} alt="Image is not supporting" />

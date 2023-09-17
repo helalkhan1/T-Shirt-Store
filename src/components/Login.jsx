@@ -46,11 +46,11 @@ const Login = () => {
               <span>Password</span>
             </div>
             <div className="my-4 px-4">
-              <NavLink className="btn cartbtn proceedbtn mb-2" to="/login1">Login</NavLink>
-              <NavLink className="btn cartbtn proceedbtn" to="/login1">Forget Password</NavLink>
+              <NavLink className="btn cartbtn proceedbtn mb-2" to="/T-Shirt-Store/login1">Login</NavLink>
+              <NavLink className="btn cartbtn proceedbtn" to="/T-Shirt-Store/login1">Forget Password</NavLink>
             </div>
             <div className="loginFormBottom">
-              <p>Don't you have any account? <NavLink  to="/registration">Create account.</NavLink></p>
+              <p>Don't you have any account? <NavLink  to="/T-Shirt-Store/registration">Create account.</NavLink></p>
             </div>
           </div>
         </div>
