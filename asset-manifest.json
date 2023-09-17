@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/T-Shirt-Store/static/css/main.96fd3683.css",
-    "main.js": "/T-Shirt-Store/static/js/main.e28ba6c5.js",
+    "main.js": "/T-Shirt-Store/static/js/main.c634ef1b.js",
     "static/media/product-08-a.jpg": "/T-Shirt-Store/static/media/product-08-a.fd3e9a38f7b4c4b1c73b.jpg",
     "static/media/homeImage.png": "/T-Shirt-Store/static/media/homeImage.f260d51e6248ab19780c.png",
     "static/media/product-03-a.jpg": "/T-Shirt-Store/static/media/product-03-a.c0802bf68503c5abad0e.jpg",
@@ -18,10 +18,10 @@
     "static/media/product-01-d.jpg": "/T-Shirt-Store/static/media/product-01-d.7eb219abcd656e1aaae6.jpg",
     "index.html": "/T-Shirt-Store/index.html",
     "main.96fd3683.css.map": "/T-Shirt-Store/static/css/main.96fd3683.css.map",
-    "main.e28ba6c5.js.map": "/T-Shirt-Store/static/js/main.e28ba6c5.js.map"
+    "main.c634ef1b.js.map": "/T-Shirt-Store/static/js/main.c634ef1b.js.map"
   },
   "entrypoints": [
     "static/css/main.96fd3683.css",
-    "static/js/main.e28ba6c5.js"
+    "static/js/main.c634ef1b.js"
   ]
 }
