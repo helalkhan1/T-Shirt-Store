@@ -33,7 +33,7 @@ function Card  (props)  {
      
     return (
         <>                            
-            <div className={` ${screenWidth > 768 ? "col-3" : "col-6" }`}>
+            <div className={` ${screenWidth > 768 ? "col-3 " : "col-6" }`}>
                 <div className="cardcontainer mt-4">
                     <div className="cardstyle ">
                         <Link to= {`/T-Shirt-Store/Product/${props.productName} `}
@@ -44,7 +44,7 @@ function Card  (props)  {
                             {screenWidth < 768 ? ( <img src= {image} alt="Not supporting" />):( <img src= {over ? props.image2.imgsrc : props.image1} alt="Not supporting" />)}
 
                             <div className="cardcontent"> 
-                                <p><Star stars ={props.stars} /><br/>{props.category}<br/> <b>{props.productName}{screenWidth}</b><br/>Price: {<FormatPrice price={props.price} />}</p>
+                                <p><Star stars ={props.stars} /><br/>{props.category}<br/> <b>{props.productName}</b><br/>Price: {<FormatPrice price={props.price} />}</p>
                             </div>
                         </Link> 
                     </div>   

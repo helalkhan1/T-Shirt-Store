@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{ useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./style.css";
 import { useCartContext } from "../context/CartContext";
@@ -30,6 +30,8 @@ const Checkout = () =>{
         });
         setInputFields(updatedFields);
       };
+
+      
 
     
     if(cart.length === 0){

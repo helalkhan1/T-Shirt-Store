@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./style.css";
 import CartSingleProduct from "./CartSingleProduct";
@@ -7,6 +7,8 @@ import { useCartContext } from "../context/CartContext";
 
 const Cart = () =>{
     const {cart, clearCart, total_price, total_price_with_vat} = useCartContext();
+    const [coupon, setCoupon] = useState(false);
+
 
     if(cart.length === 0){
         return (
@@ -25,8 +27,8 @@ const Cart = () =>{
             <div className="marginLeftRight">
                 <div className="pt-5 ">
                     <h4 className="pb-4">Cart</h4>
-                    <div className="center">
-                        <h4><b>Shopping Cart</b></h4>
+                    <div className="center mb-4"> 
+                        <h4> <b>Shopping Cart</b> </h4>
                     </div>
                     <div className="container-fluid ">
                         <div className="row ">
@@ -75,7 +77,7 @@ const Cart = () =>{
                                 </div>
                             </div>
                             <div className="col-md-4 mobileMarginTop">
-                                <div className="demo11">
+                                
                                     <div className="CartSingleProductTitle ">
                                         <p><b>Cart Totals</b></p>
                                     </div>
@@ -88,16 +90,25 @@ const Cart = () =>{
                                             <p>Vat (15%)<span className="rightFloat">{<FormatPrice price={0.15 * total_price}/>}</span></p>
                                         </div>
                                         <hr/>
-                                        <div className="px-2">
+                                        <div className="px-2 ">
                                             <p>Total<span className="rightFloat">{<FormatPrice price={total_price_with_vat}/>}</span></p>
                                         </div>
                                         <hr/>
-                                        <p>Have Copon?</p>
-                                        
-                                        <NavLink className="btn cartbtn proceedbtn" to="/T-Shirt-Store/checkout">Proceed to checkout</NavLink>
-                                       
+                                        {coupon === true ?
+                                            (   <div className="row ">
+                                                    <div className="col-8">
+                                                        <input type="text" className="form-control" placeholder="Coupon code" name="coupon"/>
+                                                    </div>
+                                                    <div className="col-4">
+                                                        <button className="btn cartbtn proceedbtn">Apply</button>
+                                                    </div>
+                                                </div>
+                                            ):(
+                                                <button className="btn" onClick={()=>setCoupon(true)}>Have Copon?</button>
+                                            )
+                                        }
+                                        <NavLink className="btn cartbtn proceedbtn " to="/T-Shirt-Store/checkout">Proceed to checkout</NavLink>
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </div> 

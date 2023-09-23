@@ -68,8 +68,7 @@
 
 .cardstyle {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.8s;
-  width: 250px;
+  width: 100%;
   margin:auto;
 }
   
@@ -82,8 +81,11 @@
 }
   
 .cardstyle img{
-  width:100%; 
+  width:100%;
+  transition: transform 0.8s;
 }
+
+
 
 .cardcontent p{
   line-height: 1.5;
@@ -101,6 +103,7 @@
   height: 500px;
 }
 
+
 .productimg img{
   width: 90%;
   height: 100%;
@@ -116,6 +119,9 @@
   background-color: #4d4d4db2;
 }
 
+.btnbgColor{
+  background-color: #4d4d4d3f;
+}
 
 .selected {
   color: white;
@@ -439,11 +445,7 @@ input[type="text"]::placeholder {
 
 
 
-@media screen and (max-width: 920px) and (min-width: 768px) {
-  .cardstyle {
-    width: 170px;
-  }
-}
+
 
 @media screen and (max-width: 1150px) and (min-width: 768px) {
 
@@ -464,9 +466,7 @@ input[type="text"]::placeholder {
   .modalContent{
     width: 50%; 
   }
-  .cardstyle {
-    width: 200px;
-  }
+
 
   .productDisplayimg img{
     width: 350px;
@@ -487,9 +487,6 @@ input[type="text"]::placeholder {
   }
   .modalContent{
     width: 70%; 
-  }
-  .cardstyle {
-    width: 200px;
   }
 }
 
@@ -538,17 +535,13 @@ input[type="text"]::placeholder {
     width: 100%; 
   }
 
-  .cardstyle {
-    width: 150px;
-  }
   .formBox{
     width: 350px;
     height: 480px;
   }
+
   .loginFormBottom a{
     color:#1741ccc5;
   }
 
 }
-
-

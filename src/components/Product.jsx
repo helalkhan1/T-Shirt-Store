@@ -2,8 +2,8 @@ import React, { useState , useEffect } from "react";
 import { NavLink, useParams } from 'react-router-dom';
 import "./style.css";
 import { useProuctContext } from "../context/ProuctContext";
-import FormatPrice from "../Helpers/FormatPrice";
 import { useCartContext } from "../context/CartContext";
+import FormatPrice from "../Helpers/FormatPrice";
 import Card from "./Card";
 import Star from "./Star";
 import UserRating from "./UserRating";
@@ -93,6 +93,19 @@ const Product = () => {
             updateStock(image4)
         }   
     };
+
+    const imageClick = (image) => {
+        if(image.color === "Black"){
+            updateProduct({color : "Black", imgsrc: image.imgsrc , stock:0 })
+        }else if(image.color === "Orange"){
+            updateProduct({color : "Orange", imgsrc: image.imgsrc , stock:0 })
+        }else if(image.color === "White"){
+            updateProduct({color : "White", imgsrc: image.imgsrc , stock:0 })
+        }
+        updateStock(image)
+        updatedDisablebSizebtn(false);
+    }
+
 
 
     const [disabledAddbtn, updateDisabledAddbtn] = useState(true);
@@ -232,15 +245,15 @@ const Product = () => {
                                 <img src={displayProduct.imgsrc} alt="Not supporting" />
                                 <div className="row my-4">
                                     <div className="col-6 productimg">  
-                                        <img src={image2.imgsrc} alt="Not supporting" />
+                                        <img src={image2.imgsrc} onClick={()=>imageClick(image2)} alt="Not supporting" />
                                     </div>
                                     <div className="col-6 productimg">
-                                        <img src={image3.imgsrc} alt="Not supporting" />
+                                        <img src={image3.imgsrc} onClick={()=>imageClick(image3)} alt="Not supporting" />
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-6 productimg">
-                                        <img src={image4.imgsrc} alt="Not supporting" />
+                                        <img src={image4.imgsrc} onClick={()=>imageClick(image4)} alt="Not supporting" />
                                     </div>
                                 </div>
                             </div>
@@ -253,18 +266,18 @@ const Product = () => {
                                 <p>This this a popular and beautiful designed T-Shirts.</p>
                                 <p>Color</p><span></span>
                                 <div className="btn-group mb-2">
-                                    <button type="button" className= {`btn btn1 me-2 ${displayProduct.color === "Black"  ? 'selected' : ''}`}  onClick={blackImg}  >Black</button>
-                                    <button type="button" className= {`btn btn1 me-2 ${displayProduct.color === "Orange" ? 'selected' : ''}`}  onClick={orangeImg} >Orange</button>
-                                    <button type="button" className= {`btn btn1 me-2 ${displayProduct.color === "White"  ? 'selected' : ''}`}  onClick={whiteImg} >White</button>
+                                    <button type="button" className= {`btn btnbgColor me-2 ${displayProduct.color === "Black"  ? 'selected' : ''}`}  onClick={blackImg}  >Black</button>
+                                    <button type="button" className= {`btn btnbgColor me-2 ${displayProduct.color === "Orange" ? 'selected' : ''}`}  onClick={orangeImg} >Orange</button>
+                                    <button type="button" className= {`btn btnbgColor me-2 ${displayProduct.color === "White"  ? 'selected' : ''}`}  onClick={whiteImg} >White</button>
                                 </div>    
                                 <hr/>
                                 <p>Size</p>
                                 <div className="btn-group mb-1">
-                                    <button type="button" disabled={disablebSizebtn} className= {`btn btn1 me-2 ${size === "S"  ?  "selected" : ""}`}  onClick={()=> sizeButton("S")}  >S</button>
-                                    <button type="button" disabled={disablebSizebtn} className= {`btn btn1 me-2 ${size === "M"  ?  "selected" : ""}`}  onClick={()=> sizeButton("M")}  >M</button>
-                                    <button type="button" disabled={disablebSizebtn} className= {`btn btn1 me-2 ${size === "L"  ?  "selected" : ""}`}  onClick={()=> sizeButton("L")}  >L</button>
-                                    <button type="button" disabled={disablebSizebtn} className= {`btn btn1 me-2 ${size === "XL" ?  "selected" : ""}`}  onClick={()=> sizeButton("XL")} >XL</button>
-                                    <button type="button" disabled={disablebSizebtn} className= {`btn btn1 me-2 ${size === "XXL"?  "selected" : ""}`}  onClick={()=> sizeButton("XXL")}>XXL</button>
+                                    <button type="button" disabled={disablebSizebtn} className= {`btn btnbgColor me-2 ${size === "S"  ?  "selected" : ""}`}  onClick={()=> sizeButton("S")}  >S</button>
+                                    <button type="button" disabled={disablebSizebtn} className= {`btn btnbgColor me-2 ${size === "M"  ?  "selected" : ""}`}  onClick={()=> sizeButton("M")}  >M</button>
+                                    <button type="button" disabled={disablebSizebtn} className= {`btn btnbgColor me-2 ${size === "L"  ?  "selected" : ""}`}  onClick={()=> sizeButton("L")}  >L</button>
+                                    <button type="button" disabled={disablebSizebtn} className= {`btn btnbgColor me-2 ${size === "XL" ?  "selected" : ""}`}  onClick={()=> sizeButton("XL")} >XL</button>
+                                    <button type="button" disabled={disablebSizebtn} className= {`btn btnbgColor me-2 ${size === "XXL"?  "selected" : ""}`}  onClick={()=> sizeButton("XXL")}>XXL</button>
                                 </div>    
                                 <hr/>
                                 <div className="btn-group">

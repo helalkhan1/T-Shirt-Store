@@ -16,7 +16,7 @@ const Contact = () =>{
                     </div>
                     <div className="container-fluid py-2 contact ">
                         <div className="row">
-                            <div className="col-md-6 contactInfo py-2">
+                            <div className="col-md-6 contactInfo py-2 my-5">
                                 <div className="ms-4">
                                     <h3><b>Get in touch</b></h3>
                                     <p>For any query you can visit us or Email us or call us anytime.</p>
@@ -25,7 +25,7 @@ const Contact = () =>{
                                     <BsFillTelephoneFill /><span className="ps-2"> 010000000000</span>
                                 </div>      
                             </div>
-                            <div className="col-md-6 bg-white py-4 px-4">
+                            <div className="col-md-6 bg-white py-3 px-4 my-5 ">
                                 <div className="row ">
                                     <div className="col">
                                         <label htmlFor="fname">First Name</label>
@@ -47,7 +47,7 @@ const Contact = () =>{
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>  
                 </div>
             </div>
         </>
